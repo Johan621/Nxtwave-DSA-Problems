@@ -1,0 +1,64 @@
+Repeat Orders in Range
+
+Difficulty: Easy
+Tags: Companies
+
+Problem Description
+
+You are given an integer n representing the number of customer orders and an array orders of size n, where orders[i] represents the product ID ordered at the i-th minute.
+
+You are also given an integer k representing the allowed time interval in minutes.
+
+Your task is to determine whether a customer orders the same product more than once within a short time interval of k minutes.
+
+Return true if such a repeated order exists within k minutes, otherwise return false.
+
+Example 1
+
+Input:
+
+n = 7, k = 4
+orders = [101, 203, 305, 101, 402, 506, 203]
+
+Output:
+
+true
+
+Explanation:
+Product 101 is reordered at minute 3, just 3 minutes after its first order at minute 0 (within k = 4), so the output is true.
+
+Example 2
+
+Input:
+
+n = 5, k = 2
+orders = [111, 222, 333, 444, 555]
+
+Output:
+
+false
+
+Explanation:
+No product is reordered within 2 minutes of its previous order, so the output is false.
+
+Your Task
+
+Complete the provided function:
+
+hasQuickRepeatedOrder(orders, k)
+orders: integer array of size n
+k: allowed time interval
+
+Return:
+
+true if any product is ordered more than once within k minutes
+otherwise return false
+Constraints
+1 ≤ n ≤ 10^5
+-10^9 ≤ orders[i] ≤ 10^9
+1 ≤ k ≤ 10^5
+Input Format
+First line contains two integers n and k
+Second line contains an array orders of length n
+Output Format
+A single boolean value (true or false) indicating whether any product ID appears at least twice within k minutes in the orders array.
