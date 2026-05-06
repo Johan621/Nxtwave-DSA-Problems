@@ -1,0 +1,36 @@
+Half Pair Check
+Problem Description
+
+You are given an array arr of integers. Your task is to check if there exist two distinct indices i and j such that arr[i] is exactly half of arr[j].
+
+Return true if such a pair exists, and false otherwise.
+
+Example 1
+Input
+arr = [12, 4, 8, 6]
+Output
+true
+Explanation
+For i = 3 and j = 0,
+arr[i] = 6, which is half of arr[j] = 12.
+Example 2
+Input
+arr = [7, 1, 10, 3]
+Output
+false
+Explanation
+No such pair of indices exist in the array.
+Your Task
+
+Complete the provided function hasHalf that takes two arguments:
+
+arr : An array of integers.
+n : An integer representing the number of elements in the array arr.
+Constraints
+2 <= arr.length <= 10^5
+-10^4 <= arr[i] <= 10^4
+Input Format
+The first line contains an integer n, representing the number of elements in the array arr.
+The second line contains n space-separated integers representing the elements of the array arr.
+Output Format
+Output either true if such a pair exists or false if no such pair is found.
